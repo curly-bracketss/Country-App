@@ -37,7 +37,6 @@ function Header() {
           </button>
         </div>
 
-        {/* Conditionally render search bar */}
         {search && (
           <input
             type="text"
