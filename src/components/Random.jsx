@@ -1,31 +1,27 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+function Random({ name, region, population, area, capital, flag,alpha3Code }) {
 
-function Random({ random }) {
-    function random() {
-        return Math.floor(Math.random() * 100) + 1;
-    }
-
-
-    filteredData[random].map((item) => {
-        return (
-            <>
-                <div className="w-xs shadow-md dark:bg-gray-50 bg-white dark:text-gray-900 flex">
-                    <img src={item.flag} alt="" className="object-cover w-full h-50 dark:bg-gray-500" />
-                    <div className='p-3'>
-                        <p className='h-10'>
-                            {item.region}
+    return (
+        <>
+            <Link to={`/details/${alpha3Code}`}>
+                <div className=" shadow-md  dark:bg-gray-50 max-w-5xl  dark:text-gray-900 gap-3 flex">
+                    <img src={flag} alt="" className="object-cover w-2xl dark:bg-gray-500" />
+                    <div className='p-6 space-y-2 lg:shadow-xl w-xl border-b-[2px] border-violet-500 md:border-0  '>
+                        <h2 className="text-3xl min-h-10 font-bold tracking-wide ">{name}</h2>
+                        <p className='h-10 text-[#8b5cf6] font-semibold underline'>
+                            {region}
                         </p>
-                        <h2 className="text-xl h-10  font-semibold tracking-wide italic">{item.name}, {item.capital}</h2>
+                        <p className="dark:text-gray-800 text-md">Capital: {capital}</p>
+                        <p className="dark:text-gray-800 text-md">Area: {area}km<sup>2</sup></p>
+                        <p className="dark:text-gray-800 text-md">Population: {population}</p>
 
-                        <div className="mt-6 mb-2 gap-2.5 flex items-center text-gray-600" >
-                            <p className="dark:text-gray-800 text-md">Population: {item.population}</p>
-                            <span className="block text-md">{item.area}km<sup>2</sup></span>
-                        </div>
                     </div>
                 </div>
-            </>
-        )
-    })
+            </Link>
+        </>
+    )
 }
+
 
 export default Random
