@@ -6,7 +6,7 @@ function Section() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/TheOksigen/purfect_data/refs/heads/main/country.json"')
+    fetch('https://raw.githubusercontent.com/TheOksigen/purfect_data/refs/heads/main/country.json')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error("Failed to fetch countries:", error));
