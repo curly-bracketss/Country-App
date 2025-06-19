@@ -1,12 +1,45 @@
-# React + Vite
+# 🌍 Country App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Country App** is a responsive web application built with **React.js** and **Tailwind CSS** that allows users to explore detailed information about countries around the world.
 
-Currently, two official plugins are available:
+The app fetches real-time data and displays key details such as:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Country Name
+- Flag
+- Capital
+- Population
+- Region & Subregion
+- Area
+- Languages
+- Currencies
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **React.js** – Component-based frontend library
+- 🎨 **Tailwind CSS** – Utility-first CSS framework for styling
+- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop
+- 🌐 **REST Countries API** – For live country data
+
+## ✨ Features
+
+- Dynamic list of all countries with flags
+- Click to view detailed information
+- Responsive layout for all screen sizes
+- Search functionality to find a country quickly *(optional if implemented)*
+- Clean and modern UI with Tailwind
+
+
+
+## 🚀 Getting Started
+
+To run the app locally:
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/country-app.git
+
+2, **Install dependecies**
+cd country-app
+npm install
+3 **Start the development server**
+npm run dev
