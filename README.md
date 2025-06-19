@@ -36,10 +36,11 @@ To run the app locally:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/country-app.git
+   git clone https://github.com/curly-bracketss/Country-App.git
 
-2, **Install dependecies**
+2. **Install dependecies**
 cd country-app
 npm install
-3 **Start the development server**
+
+3. **Start the development server**
 npm run dev
